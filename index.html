@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NumberNet4</title>
+    <link rel="stylesheet" href="index.css?ver=1.03">
+</head>
+
+<body>
+    <div id="root">
+        <main>
+            <div>
+                <canvas id="paper" width="280" height="280">
+                </canvas>
+            </div>
+            <div>
+                <span id="result">~</span>
+            </div>
+        </main>
+        <footer>
+            <div class="buttons">
+                <button id="clear-button">CLEAR</button>
+                <button id="recognise-button">RECOGNISE</button>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./logic/imgUtil.js?ver=1.03"></script>
+    <script src="./logic/sketchpad.js?ver=1.03"></script>
+    <script type="module" src="index.js?ver=1.03"></script>
+</body>
+
+</html>

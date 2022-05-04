@@ -1,0 +1,70 @@
+*
+    box-sizing: border-box
+
+body
+    margin: 0
+    padding: 0
+
+#root
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    height: 100vh
+
+$mobileBreak: 500px
+
+main
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 1em
+    box-shadow: 2px 3px 7px 0px #00000035
+
+    @media screen and (max-width: $mobileBreak)
+        flex-direction: column-reverse
+        border-radius: 0.5em
+
+    > div
+        width: 280px
+        height: 280px
+        display: flex
+        justify-content: center
+        align-items: center
+
+        @media screen and (max-width: $mobileBreak)
+            width: 200px
+            height: 200px
+
+    #paper
+        $borderStyle: 1px dotted black
+        border-right: $borderStyle
+        width: 100%
+
+        @media screen and (max-width: $mobileBreak)
+            border-right: none
+            border-top: $borderStyle
+
+    #result
+        font-size: 10em
+
+button
+    border: 1px solid whitesmoke
+    border-radius: 0.2em
+    background-image: linear-gradient(to bottom, #fff, #eee)
+    padding: 0.5em 1em
+    outline: none
+
+    &:hover
+        border: 1px solid transparent
+        background-image: linear-gradient(to bottom, #555, #000)
+        color: white
+
+.buttons
+    margin-top: 1em
+
+    @media screen and (max-width: $mobileBreak)
+        margin-top: 2em
+
+    button
+        font-size: 1.2em
